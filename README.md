@@ -30,8 +30,9 @@ Docker
 |---|---|---|---|
 | Qwen 2.5 3B | ~1.9 GB | 5-7 tokens/sec | Fast daily driver |
 | Qwen 2.5 7B | ~4.7 GB | 1-3 tokens/sec | Best quality at 7B |
+| Qwen 2.5 Coder 3B | ~1.9 GB | 5-7 tokens/sec | Code-specialized |
 
-The 3B model is recommended for everyday use. The 7B model produces better answers but a 300-word response takes 2-4 minutes on CPU.
+The 3B model is recommended for everyday use. The 7B model produces better answers but a 300-word response takes 2-4 minutes on CPU. Use Qwen 2.5 Coder for programming tasks.
 
 ## Setup
 
@@ -65,8 +66,9 @@ curl http://localhost:11434
 ### 3. Pull models
 
 ```bash
-ollama pull qwen2.5:3b    # ~1.9 GB download
-ollama pull qwen2.5:7b    # ~4.7 GB download
+ollama pull qwen2.5:3b         # ~1.9 GB download
+ollama pull qwen2.5:7b         # ~4.7 GB download
+ollama pull qwen2.5-coder:3b   # ~1.9 GB download (code-specialized)
 ```
 
 ### 4. Test the CLI
