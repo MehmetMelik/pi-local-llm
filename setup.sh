@@ -76,6 +76,9 @@ ollama pull qwen2.5:3b
 info "Pulling Qwen 2.5 7B (~4.7 GB)..."
 ollama pull qwen2.5:7b
 
+info "Pulling Qwen 2.5 Coder 3B (~1.9 GB)..."
+ollama pull qwen2.5-coder:3b
+
 # Start Open WebUI
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 info "Starting Open WebUI..."
